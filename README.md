@@ -28,16 +28,15 @@ This laboratory activity aims to:
 
 [Explain the specific engineering purpose your circuit block plays in the overall robotic arm system. How does it process the bio-signal?]
 
->#### Engineering Purpose
+>#### Engineering Purpose (eedit pa rin)
 
-The RMS Envelope Detector:
-
+The RMS Envelope Detector: 
 - Removes high-frequency noise and fluctuations
 - Produces smoother control signals
 - Improves robotic arm movement stability
 - Converts raw EMG activity into usable motion control data
 
->#### Biomedical Relevance
+>#### Biomedical Relevance: (eedit pa rin)
 
 In biomedical instrumentation, signal conditioning is critical for:
 
