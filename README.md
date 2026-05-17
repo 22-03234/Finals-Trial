@@ -58,27 +58,27 @@ _Short Description_
 >#### BIOPAC Waveform Outputs
 
 **EMG Channel 1 Low Pass:**
-```md
-![Waveform Output](images/EMG 1.png)
-```
+
+![Waveform Output](images/EMG%201.png)
+
 _Short Description_
 
-**EMG Channel 1 Waveform Selection from 10% to 90%:** 
-```md
-![Waveform Output](images/EMG 1_10-90.png)
-```
+**EMG Channel 1 Waveform Selection from 10% to 90%:**
+
+![Waveform Output](images/EMG%201_10-90.png)
+
 _Short Description_
 
 **EMG Channel 2 Low Pass:**
-```md
-![Waveform Output](images/EMG 2.png)
-```
+
+![Waveform Output](images/EMG%202.png)
+
 _Short Description_
 
-**EMG Channel 2 Waveform Selection from 10% to 90%:** 
-```md
-![Waveform Output](images/EMG 2_10-90.png)
-```
+**EMG Channel 2 Waveform Selection from 10% to 90%:**
+
+![Waveform Output](images/EMG%202_10-90.png)
+
 _Short Description_
 
 ---
