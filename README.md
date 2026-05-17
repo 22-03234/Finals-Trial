@@ -130,8 +130,8 @@ _Short Description_
 
 |  | P-P (mV) | Min (mV) | 10% of max. (mV)<br>(Calculate) | 90% of max. (mV)<br>(Calculate) |
 |---|---|---|---|---|
-| **EMG Channel 1** |  |  |  |  |
-| **EMG Channel 2** |  |  |  |  |
+| **EMG Channel 1** | 495.62 mV | -241.851 mV | -192.289 mV | 204.207 mV |
+| **EMG Channel 2** | 507.614 mV | -248.306 mV | -197.545 mV | 208.547 mV |
 
 <b>Table 9.2 CH 2: Low Pass Out</b>
 
@@ -179,7 +179,7 @@ Where:
 	
 | Measurement | EMG Channel 1 | EMG Channel 2 |
 |---|---|---|
-| Delta T (s) |  |  |
+| Delta T (s) | 0.349 sec | 0.346 sec |
 | Low Pass Filter Frequency (Estimated) |  |  |
 
 **Table 9.3**
