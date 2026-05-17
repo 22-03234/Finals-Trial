@@ -65,6 +65,14 @@ In biomedical instrumentation, signal conditioning is critical for:
     <td align="center"><b>EMG Channel 1 (U4)</b></td>
     <td align="center"><b>EMG Channel 2 (U7)</b></td>
   </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="images/Lab9_ActualCircuit.jpeg" alt="Actual Circuit" width="600">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><b>Actual Circuit</b></td>
+  </tr>
 </table>
 
 </div>
