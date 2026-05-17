@@ -59,25 +59,25 @@ _Short Description_
 
 **EMG Channel 1 Low Pass:**
 ```md
-![Waveform Output](images/waveform.png)
+![Waveform Output](images/EMG 1.png)
 ```
 _Short Description_
 
 **EMG Channel 1 Waveform Selection from 10% to 90%:** 
 ```md
-![Waveform Output](images/waveform.png)
+![Waveform Output](images/EMG 1_10-90.png)
 ```
 _Short Description_
 
 **EMG Channel 2 Low Pass:**
 ```md
-![Waveform Output](images/waveform.png)
+![Waveform Output](images/EMG 2.png)
 ```
 _Short Description_
 
 **EMG Channel 2 Waveform Selection from 10% to 90%:** 
 ```md
-![Waveform Output](images/waveform.png)
+![Waveform Output](images/EMG 2_10-90.png)
 ```
 _Short Description_
 
