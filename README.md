@@ -180,8 +180,8 @@ _Short Description_
 
 Where:
 
-- $f_h = estimated low-pass frequency response  
-- $t_r = rise time from 10% to 90%
+- $f_h$ = estimated low-pass frequency response  
+- $t_r$ = rise time from 10% to 90%
 
 <div align="center">
 	
