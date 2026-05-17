@@ -117,8 +117,8 @@ _Short Description_
 
 |  | P-P (mV) |
 |---|---|
-| **EMG Channel 1** |  |
-| **EMG Channel 2** |  |
+| **EMG Channel 1** | 512.908 mV |
+| **EMG Channel 2** | 510.894 mV |
 
 <b>Table 9.1 CH 1: 0.5Vpp Sq Wave</b>
 
