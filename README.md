@@ -50,10 +50,26 @@ In biomedical instrumentation, signal conditioning is critical for:
 
 >#### Circuit Schematics
 
-```md
-![Circuit Schematic](images/schematic.png)
-```
-_Short Description_
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/Lab9_U4.png" alt="EMG Channel 1 U4 Schematic" width="400">
+    </td>
+    <td align="center">
+      <img src="images/Lab9_U7.png" alt="EMG Channel 2 U7 Schematic" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>EMG Channel 1 (U4)</b></td>
+    <td align="center"><b>EMG Channel 2 (U7)</b></td>
+  </tr>
+  <tr>
+    <td align="center"><i>Short description</i></td>
+    <td align="center"><i>Short description</i></td>
+  </tr>
+</table>
+
+---
 
 > #### BIOPAC Waveform Outputs
 
