@@ -50,6 +50,8 @@ In biomedical instrumentation, signal conditioning is critical for:
 
 >#### Circuit Schematics
 
+<div align="center">
+
 <table>
   <tr>
     <td align="center">
@@ -63,11 +65,11 @@ In biomedical instrumentation, signal conditioning is critical for:
     <td align="center"><b>EMG Channel 1 (U4)</b></td>
     <td align="center"><b>EMG Channel 2 (U7)</b></td>
   </tr>
-  <tr>
-    <td align="center"><i>Short description</i></td>
-    <td align="center"><i>Short description</i></td>
-  </tr>
 </table>
+
+</div>
+
+_Short description here._
 
 ---
 
