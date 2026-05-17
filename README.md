@@ -180,7 +180,7 @@ Where:
 | Measurement | EMG Channel 1 | EMG Channel 2 |
 |---|---|---|
 | Delta T (s) | 0.349 sec | 0.346 sec |
-| Low Pass Filter Frequency (Estimated) |  |  |
+| Low Pass Filter Frequency (Estimated) | 1.003 Hz | 1.012 Hz |
 
 **Table 9.3**
 
