@@ -26,13 +26,11 @@ This laboratory activity aims to:
 
 ### Circuit Function
 
-<p align="justify" style="text-indent: 50px;">
-The circuit used in this laboratory functions as a 1 Hz low-pass filter for the EMG-powered robotic arm system. Its main role is to process the output from the absolute value circuit by reducing the fast variations present in the rectified EMG signal. Since EMG signals naturally contain rapid changes and high-frequency components, they cannot be directly used as stable control inputs for a robotic arm. The low-pass filter helps convert these changing signals into a smoother waveform that better represents the general level of muscle activity.
-<p/>
+<p align="justify">
+&emsp;&emsp;The circuit used in this laboratory functions as a 1 Hz low-pass filter for the EMG-powered robotic arm system. Its main role is to process the output from the absolute value circuit by reducing the fast variations present in the rectified EMG signal. Since EMG signals naturally contain rapid changes and high-frequency components, they cannot be directly used as stable control inputs for a robotic arm. The low-pass filter helps convert these changing signals into a smoother waveform that better represents the general level of muscle activity.
 
-<p align="justify" style="text-indent: 50px;">
-In the robotic arm system, this filtered signal becomes more suitable for controlling the servomotors. The 1 Hz low-pass filter behaves similarly to an RMS conversion, where the filtered rectified EMG signal becomes proportional to the average EMG amplitude over approximately one-second intervals. This means that instead of responding to every small fluctuation in the EMG signal, the circuit produces a slower and more usable control signal that reflects the strength of muscle activation.
-<p/>
+<p align="justify">
+&emsp;&emsp;In the robotic arm system, this filtered signal becomes more suitable for controlling the servomotors. The 1 Hz low-pass filter behaves similarly to an RMS conversion, where the filtered rectified EMG signal becomes proportional to the average EMG amplitude over approximately one-second intervals. This means that instead of responding to every small fluctuation in the EMG signal, the circuit produces a slower and more usable control signal that reflects the strength of muscle activation.
 
 >#### Engineering Purpose
 
