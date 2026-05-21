@@ -26,24 +26,30 @@ This laboratory activity aims to:
 
 ### Circuit Function
 
-[Explain the specific engineering purpose your circuit block plays in the overall robotic arm system. How does it process the bio-signal?]
+<p align="justify">
+The circuit used in this laboratory functions as a 1 Hz low-pass filter for the EMG-powered robotic arm system. Its main role is to process the output from the absolute value circuit by reducing the fast variations present in the rectified EMG signal. Since EMG signals naturally contain rapid changes and high-frequency components, they cannot be directly used as stable control inputs for a robotic arm. The low-pass filter helps convert these changing signals into a smoother waveform that better represents the general level of muscle activity.
 
->#### Engineering Purpose (eedit pa rin)
+<p align="justify">
+In the robotic arm system, this filtered signal becomes more suitable for controlling the servomotors. The 1 Hz low-pass filter behaves similarly to an RMS conversion, where the filtered rectified EMG signal becomes proportional to the average EMG amplitude over approximately one-second intervals. This means that instead of responding to every small fluctuation in the EMG signal, the circuit produces a slower and more usable control signal that reflects the strength of muscle activation.
 
-The RMS Envelope Detector: 
-- Removes high-frequency noise and fluctuations
-- Produces smoother control signals
-- Improves robotic arm movement stability
-- Converts raw EMG activity into usable motion control data
 
->#### Biomedical Relevance: (eedit pa rin)
+>#### Engineering Purpose
+>
+<p align="justify">
+The engineering purpose of the RMS envelope detector, represented by the 1 Hz low-pass filter in this laboratory, is to transform the rectified EMG signal into a smoother and more usable control signal for the robotic arm. Since EMG signals contain rapid fluctuations and high-frequency components, direct use of the raw signal may result in unstable or inconsistent actuator movement. By filtering the signal, the circuit reduces unwanted high-frequency variations and allows the system to respond mainly to the general level of muscle activity. This produces a more stable control input that is better suited for servomotor operation, since the BIOPAC manual notes that the robotic arm’s servomotor control signals must be limited to frequencies no greater than 1 Hz.
+	
+<p align="justify">
+The circuit also functions similarly to an RMS envelope detector because it does not follow every small change in the EMG waveform. Instead, it produces an output that reflects the average EMG amplitude over a short time interval. This helps convert raw EMG activity into usable motion control data, allowing the robotic arm to respond more smoothly to muscle activation.
 
-In biomedical instrumentation, signal conditioning is critical for:
 
-- Accurate muscle activity interpretation
-- Noise reduction
-- Safe actuator control
-- Reliable human-machine interfacing
+>#### Biomedical Relevance
+
+<p align="justify">
+In biomedical instrumentation, signal conditioning is necessary because biological signals such as EMG are often small, noisy, and variable. For an EMG-powered robotic arm, the system must interpret muscle activity accurately before it can produce a safe and reliable mechanical response. The low-pass filter supports this process by reducing noise and smoothing the signal, allowing the device to focus on the meaningful changes in muscle contraction rather than on fast and irregular signal fluctuations.
+	
+<p align="justify">
+This is relevant to human-machine interfacing because the quality of the conditioned signal directly affects how well the robotic arm responds to the user’s intention. A smoother EMG control signal can help prevent sudden or unstable actuator movements, improving both safety and control reliability. In this way, the circuit demonstrates the importance of signal conditioning in biomedical systems that translate physiological activity into functional assistive movement.
+
 
 ---
 ###  Schematics & Waveforms
@@ -77,8 +83,10 @@ In biomedical instrumentation, signal conditioning is critical for:
 
 </div>
 
+<p align="justify">
 The schematic shows the 1 Hz low-pass filter circuit used for both EMG Channel 1 and EMG Channel 2. Channel 1 uses the U4D section of the LM324N operational amplifier, while Channel 2 uses the U7D section. Both circuits have the same resistor-capacitor arrangement, which filters the incoming EMG-related signal and reduces rapid fluctuations before the output is recorded through CH2_SS60LB.
-
+	
+<p align="justify">
 The actual circuit, on the other hand, shows the breadboard implementation of the same low-pass filter design. It includes the LM324N ICs, resistors, capacitors, and jumper wires used to construct the two EMG filter channels. Although the breadboard appears more complex than the schematic, it follows the same function of smoothing the signal for BIOPAC waveform analysis.
 
 
@@ -199,13 +207,14 @@ Where:
 
 </div>
 
-_Guide Questions Answer this in  discussion format
+<p align="justify">
+The calculated frequency response of both low-pass filters closely matches the intended 1 Hz cutoff frequency. EMG Channel 1 produced an estimated frequency response of 1.003 Hz, while EMG Channel 2 produced 1.012 Hz. Since both values are very near 1 Hz, the results show that the filters performed according to their expected function of allowing slow signal changes to pass while reducing faster fluctuations. The slight difference from the exact 1 Hz value is acceptable because actual circuit measurements are affected by practical factors such as component tolerance, breadboard connections, and small variations in waveform reading.
+</p>
 
-- Does the calculated frequency response match the intended 1 Hz cutoff frequency?
-- Explain why equivalent measurements may differ between the two low-pass filters.
-_
+<p align="justify">
+Although the two low-pass filters used the same circuit design, their measurements may still differ slightly due to real-world circuit conditions. The resistors and capacitors may have small tolerance differences, and the breadboard wiring may introduce minor contact resistance or connection variations. Differences between the LM324N op-amp sections may also affect the output response. In addition, the 10% and 90% points were selected from recorded BIOPAC waveform data, so the measured rise time may not be exactly identical for both channels. These factors explain why EMG Channel 1 and EMG Channel 2 produced nearly the same frequency response, but not perfectly equal values.
+</p>
 
----
 
 >#### Gain and 3 dB Cutoff Frequency Calculations
 
