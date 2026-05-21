@@ -99,9 +99,13 @@ This laboratory activity aims to:
   <img src="images/EMG%201.png" alt="EMG Channel 1 Low Pass" width="700">
 </p>
 
-_Figure 1_
+<p align="center">
+Figure 1. EMG Channel 1 Low Pass
+</p>	
 
+<p align="justify">
 The image above displays a 0.5Vpp square wave input (red) is processed by a 1 Hz low-pass filter, which slowly smooths the sharp transitions into a sinusoidal-shaped output (blue), emulating a real-time RMS detector that reflects average signal amplitude over time, demonstrating how the filter removes high-frequency components while producing a slow, stable control signal suitable for driving servomotors in a robotic arm.
+</p>
 
 **EMG Channel 1 Waveform Selection from 10% to 90%:**
 
@@ -109,7 +113,13 @@ The image above displays a 0.5Vpp square wave input (red) is processed by a 1 Hz
   <img src="images/EMG%201_10-90.png" alt="EMG Channel 1 Waveform Selection from 10% to 90%" width="700">
 </p>
 
-_Short Description_
+<p align="center">
+Figure 2. EMG Channel 1 Waveform Selection from 10% to 90%
+</p>
+
+<p align="justify">
+The image above shows EMG Channel 1 waveform selection (10%-90% range), where the "0.5Vpp Sq Wave" remains relatively stable with minimal fluctuations, indicating a steady input signal. After low-pass filtering, the "Low Pass Out" waveform exhibits a smooth rising trend, showing effective removal of high-frequency noise and preservation of the slower signal components.
+</p>	
 
 **EMG Channel 2 Low Pass:**
 
@@ -117,7 +127,13 @@ _Short Description_
   <img src="images/EMG%202.png" alt="EMG Channel 2 Low Pass" width="700">
 </p>
 
-_Short Description_
+<p align="center">
+Figure 3. EMG Channel 2 Low Pass
+</p>	
+
+<p align="justify">
+The figure above shows EMG Channel 2 after low-pass filtering, where the original square-wave input is smoothed into a gradual, sinusoidal-like waveform. This indicates effective attenuation of high-frequency components and preservation of the slower-varying signal, with a slight phase delay in the output.
+</p>
 
 **EMG Channel 2 Waveform Selection from 10% to 90%:**
 
@@ -125,7 +141,13 @@ _Short Description_
   <img src="images/EMG%202_10-90.png" alt="EMG Channel 2 Waveform Selection from 10% to 90%" width="700">
 </p>
 
-_Short Description_
+<p align="center">
+Figure 4. EMG Channel 2 Waveform Selection from 10% to 90%
+</p>	
+
+<p align="justify">
+The figure above shows the EMG Channel 2 waveform during the waveform selection process from 10% to 90%. The upper graph represents the 0.5 Vpp square wave input signal, which remains relatively constant throughout the observed time interval. The lower graph shows the low-pass filter output, where the signal gradually increases over time instead of changing abruptly. This gradual rise indicates the charging response of the RC low-pass filter as it smooths the square wave input. The waveform demonstrates how the filter attenuates high-frequency components and produces a more continuous output signal.
+</p>	
 
 ---
 
@@ -231,7 +253,9 @@ $$
 </div>
 
 
-_Explain pa konti: Since the circuit uses a unity-gain Sallen-Key low-pass filter configuration, the output voltage is approximately equal to the input voltage._
+<p align="justify">
+In this circuit, the gain is equal to 1 because it uses unity-gain Sallen-Key low-pass filter configuration, meaning the output voltage closely follows the input voltage without amplfication or attenuation.
+</p>
 
 **Low-Pass 3 dB Cutoff Frequency Calculation**
 
