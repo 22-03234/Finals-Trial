@@ -62,8 +62,8 @@ In biomedical instrumentation, signal conditioning is critical for:
     </td>
   </tr>
   <tr>
-    <td align="center"><b>EMG Channel 1 (U4)</b></td>
-    <td align="center"><b>EMG Channel 2 (U7)</b></td>
+    <td align="center"><b>EMG Channel 1 Low-Pass Filter Schematic Using U4D</b></td>
+    <td align="center"><b>EMG Channel 2 Low-Pass Filter Schematic Using U7D</b></td>
   </tr>
   <tr>
     <td colspan="2" align="center">
@@ -77,7 +77,9 @@ In biomedical instrumentation, signal conditioning is critical for:
 
 </div>
 
-_Short description here._
+The schematic shows the 1 Hz low-pass filter circuit used for both EMG Channel 1 and EMG Channel 2. Channel 1 uses the U4D section of the LM324N operational amplifier, while Channel 2 uses the U7D section. Both circuits have the same resistor-capacitor arrangement, which filters the incoming EMG-related signal and reduces rapid fluctuations before the output is recorded through CH2_SS60LB.
+The actual circuit shows the breadboard implementation of the same low-pass filter design. It includes the LM324N ICs, resistors, capacitors, and jumper wires used to construct the two EMG filter channels. Although the breadboard appears more complex than the schematic, it follows the same function of smoothing the signal for BIOPAC waveform analysis.
+
 
 ---
 
