@@ -92,7 +92,9 @@ The actual circuit, on the other hand, shows the breadboard implementation of th
   <img src="images/EMG%201.png" alt="EMG Channel 1 Low Pass" width="700">
 </p>
 
-_Short Description_
+_Figure 1_
+
+The image above displays a 0.5Vpp square wave input (red) is processed by a 1 Hz low-pass filter, which slowly smooths the sharp transitions into a sinusoidal-shaped output (blue), emulating a real-time RMS detector that reflects average signal amplitude over time, demonstrating how the filter removes high-frequency components while producing a slow, stable control signal suitable for driving servomotors in a robotic arm.
 
 **EMG Channel 1 Waveform Selection from 10% to 90%:**
 
