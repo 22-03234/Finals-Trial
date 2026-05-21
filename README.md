@@ -36,20 +36,20 @@ In the robotic arm system, this filtered signal becomes more suitable for contro
 
 >#### Engineering Purpose
 
-<p align="justify" style="text-indent: 50px;">
-The engineering purpose of the RMS envelope detector, represented by the 1 Hz low-pass filter in this laboratory, is to transform the rectified EMG signal into a smoother and more usable control signal for the robotic arm. Since EMG signals contain rapid fluctuations and high-frequency components, direct use of the raw signal may result in unstable or inconsistent actuator movement. By filtering the signal, the circuit reduces unwanted high-frequency variations and allows the system to respond mainly to the general level of muscle activity. This produces a more stable control input that is better suited for servomotor operation, since the BIOPAC manual notes that the robotic arm’s servomotor control signals must be limited to frequencies no greater than 1 Hz.
+<p align="justify">
+&emsp;&emsp;The engineering purpose of the RMS envelope detector, represented by the 1 Hz low-pass filter in this laboratory, is to transform the rectified EMG signal into a smoother and more usable control signal for the robotic arm. Since EMG signals contain rapid fluctuations and high-frequency components, direct use of the raw signal may result in unstable or inconsistent actuator movement. By filtering the signal, the circuit reduces unwanted high-frequency variations and allows the system to respond mainly to the general level of muscle activity. This produces a more stable control input that is better suited for servomotor operation, since the BIOPAC manual notes that the robotic arm’s servomotor control signals must be limited to frequencies no greater than 1 Hz.
 	
-<p align="justify" style="text-indent: 50px;">
-The circuit also functions similarly to an RMS envelope detector because it does not follow every small change in the EMG waveform. Instead, it produces an output that reflects the average EMG amplitude over a short time interval. This helps convert raw EMG activity into usable motion control data, allowing the robotic arm to respond more smoothly to muscle activation.
+<p align="justify">
+&emsp;&emsp;The circuit also functions similarly to an RMS envelope detector because it does not follow every small change in the EMG waveform. Instead, it produces an output that reflects the average EMG amplitude over a short time interval. This helps convert raw EMG activity into usable motion control data, allowing the robotic arm to respond more smoothly to muscle activation.
 
 
 >#### Biomedical Relevance
 
-<p align="justify" style="text-indent: 50px;">
-In biomedical instrumentation, signal conditioning is necessary because biological signals such as EMG are often small, noisy, and variable. For an EMG-powered robotic arm, the system must interpret muscle activity accurately before it can produce a safe and reliable mechanical response. The low-pass filter supports this process by reducing noise and smoothing the signal, allowing the device to focus on the meaningful changes in muscle contraction rather than on fast and irregular signal fluctuations.
+<p align="justify">
+&emsp;&emsp;In biomedical instrumentation, signal conditioning is necessary because biological signals such as EMG are often small, noisy, and variable. For an EMG-powered robotic arm, the system must interpret muscle activity accurately before it can produce a safe and reliable mechanical response. The low-pass filter supports this process by reducing noise and smoothing the signal, allowing the device to focus on the meaningful changes in muscle contraction rather than on fast and irregular signal fluctuations.
 	
-<p align="justify" style="text-indent: 50px;">
-This is relevant to human-machine interfacing because the quality of the conditioned signal directly affects how well the robotic arm responds to the user’s intention. A smoother EMG control signal can help prevent sudden or unstable actuator movements, improving both safety and control reliability. In this way, the circuit demonstrates the importance of signal conditioning in biomedical systems that translate physiological activity into functional assistive movement.
+<p align="justify">
+&emsp;&emsp;This is relevant to human-machine interfacing because the quality of the conditioned signal directly affects how well the robotic arm responds to the user’s intention. A smoother EMG control signal can help prevent sudden or unstable actuator movements, improving both safety and control reliability. In this way, the circuit demonstrates the importance of signal conditioning in biomedical systems that translate physiological activity into functional assistive movement.
 
 
 ---
@@ -84,11 +84,11 @@ This is relevant to human-machine interfacing because the quality of the conditi
 
 </div>
 
-<p align="justify" style="text-indent: 50px;">
-The schematic shows the 1 Hz low-pass filter circuit used for both EMG Channel 1 and EMG Channel 2. Channel 1 uses the U4D section of the LM324N operational amplifier, while Channel 2 uses the U7D section. Both circuits have the same resistor-capacitor arrangement, which filters the incoming EMG-related signal and reduces rapid fluctuations before the output is recorded through CH2_SS60LB.
-	
-<p align="justify" style="text-indent: 50px;">
-The actual circuit, on the other hand, shows the breadboard implementation of the same low-pass filter design. It includes the LM324N ICs, resistors, capacitors, and jumper wires used to construct the two EMG filter channels. Although the breadboard appears more complex than the schematic, it follows the same function of smoothing the signal for BIOPAC waveform analysis.
+<p align="justify">
+&emsp;&emsp;The schematic shows the 1 Hz low-pass filter circuit used for both EMG Channel 1 and EMG Channel 2. Channel 1 uses the U4D section of the LM324N operational amplifier, while Channel 2 uses the U7D section. Both circuits have the same resistor-capacitor arrangement, which filters the incoming EMG-related signal and reduces rapid fluctuations before the output is recorded through CH2_SS60LB.
+
+<p align="justify">
+&emsp;&emsp;The actual circuit, on the other hand, shows the breadboard implementation of the same low-pass filter design. It includes the LM324N ICs, resistors, capacitors, and jumper wires used to construct the two EMG filter channels. Although the breadboard appears more complex than the schematic, it follows the same function of smoothing the signal for BIOPAC waveform analysis.
 
 
 ---
