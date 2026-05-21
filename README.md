@@ -208,12 +208,12 @@ Where:
 
 </div>
 
-<p align="justify" style="text-indent: 50px;">
-The calculated frequency response of both low-pass filters closely matches the intended 1 Hz cutoff frequency. EMG Channel 1 produced an estimated frequency response of 1.003 Hz, while EMG Channel 2 produced 1.012 Hz. Since both values are very near 1 Hz, the results show that the filters performed according to their expected function of allowing slow signal changes to pass while reducing faster fluctuations. The small difference from the exact 1 Hz value is acceptable because actual circuit measurements are affected by practical factors such as component tolerance, breadboard connections, and minor variations in waveform reading.
+<p align="justify">
+&emsp;&emsp;The calculated frequency response of both low-pass filters closely matches the intended 1 Hz cutoff frequency. EMG Channel 1 produced an estimated frequency response of 1.003 Hz, while EMG Channel 2 produced 1.012 Hz. Since both values are very near 1 Hz, the results show that the filters performed according to their expected function of allowing slow signal changes to pass while reducing faster fluctuations. The small difference from the exact 1 Hz value is acceptable because actual circuit measurements are affected by practical factors such as component tolerance, breadboard connections, and minor variations in waveform reading.
 </p>
 
-<p align="justify" style="text-indent: 50px;">
-Although the two low-pass filters used the same circuit design, their measurements may still differ slightly due to real-world circuit conditions. The resistors and capacitors may have small tolerance differences, and the breadboard wiring may introduce minor contact resistance or connection variations. Differences between the LM324N op-amp sections may also affect the output response. In addition, the 10% and 90% points were selected from recorded BIOPAC waveform data, so the measured rise time may not be exactly identical for both channels. These factors explain why EMG Channel 1 and EMG Channel 2 produced nearly the same frequency response, but not perfectly equal values.
+<p align="justify">
+&emsp;&emsp;Although the two low-pass filters used the same circuit design, their measurements may still differ slightly due to real-world circuit conditions. The resistors and capacitors may have small tolerance differences, and the breadboard wiring may introduce minor contact resistance or connection variations. Differences between the LM324N op-amp sections may also affect the output response. In addition, the 10% and 90% points were selected from recorded BIOPAC waveform data, so the measured rise time may not be exactly identical for both channels. These factors explain why EMG Channel 1 and EMG Channel 2 produced nearly the same frequency response, but not perfectly equal values.
 </p>
 
 
