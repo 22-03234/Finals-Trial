@@ -104,7 +104,7 @@ Figure 1. EMG Channel 1 Low Pass
 </p>	
 
 <p align="justify">
-The image above displays a 0.5Vpp square wave input (red) is processed by a 1 Hz low-pass filter, which slowly smooths the sharp transitions into a sinusoidal-shaped output (blue), emulating a real-time RMS detector that reflects average signal amplitude over time, demonstrating how the filter removes high-frequency components while producing a slow, stable control signal suitable for driving servomotors in a robotic arm.
+&emsp;&emsp;The image above displays a 0.5Vpp square wave input (red) is processed by a 1 Hz low-pass filter, which slowly smooths the sharp transitions into a sinusoidal-shaped output (blue), emulating a real-time RMS detector that reflects average signal amplitude over time, demonstrating how the filter removes high-frequency components while producing a slow, stable control signal suitable for driving servomotors in a robotic arm.
 </p>
 
 **EMG Channel 1 Waveform Selection from 10% to 90%:**
@@ -118,7 +118,7 @@ Figure 2. EMG Channel 1 Waveform Selection from 10% to 90%
 </p>
 
 <p align="justify">
-The image above shows EMG Channel 1 waveform selection (10%-90% range), where the "0.5Vpp Sq Wave" remains relatively stable with minimal fluctuations, indicating a steady input signal. After low-pass filtering, the "Low Pass Out" waveform exhibits a smooth rising trend, showing effective removal of high-frequency noise and preservation of the slower signal components.
+&emsp;&emsp;The image above shows EMG Channel 1 waveform selection (10%-90% range), where the "0.5Vpp Sq Wave" remains relatively stable with minimal fluctuations, indicating a steady input signal. After low-pass filtering, the "Low Pass Out" waveform exhibits a smooth rising trend, showing effective removal of high-frequency noise and preservation of the slower signal components.
 </p>	
 
 **EMG Channel 2 Low Pass:**
@@ -132,7 +132,7 @@ Figure 3. EMG Channel 2 Low Pass
 </p>	
 
 <p align="justify">
-The figure above shows EMG Channel 2 after low-pass filtering, where the original square-wave input is smoothed into a gradual, sinusoidal-like waveform. This indicates effective attenuation of high-frequency components and preservation of the slower-varying signal, with a slight phase delay in the output.
+&emsp;&emsp;The figure above shows EMG Channel 2 after low-pass filtering, where the original square-wave input is smoothed into a gradual, sinusoidal-like waveform. This indicates effective attenuation of high-frequency components and preservation of the slower-varying signal, with a slight phase delay in the output.
 </p>
 
 **EMG Channel 2 Waveform Selection from 10% to 90%:**
@@ -146,7 +146,7 @@ Figure 4. EMG Channel 2 Waveform Selection from 10% to 90%
 </p>	
 
 <p align="justify">
-The figure above shows the EMG Channel 2 waveform during the waveform selection process from 10% to 90%. The upper graph represents the 0.5 Vpp square wave input signal, which remains relatively constant throughout the observed time interval. The lower graph shows the low-pass filter output, where the signal gradually increases over time instead of changing abruptly. This gradual rise indicates the charging response of the RC low-pass filter as it smooths the square wave input. The waveform demonstrates how the filter attenuates high-frequency components and produces a more continuous output signal.
+&emsp;&emsp;The figure above shows the EMG Channel 2 waveform during the waveform selection process from 10% to 90%. The upper graph represents the 0.5 Vpp square wave input signal, which remains relatively constant throughout the observed time interval. The lower graph shows the low-pass filter output, where the signal gradually increases over time instead of changing abruptly. This gradual rise indicates the charging response of the RC low-pass filter as it smooths the square wave input. The waveform demonstrates how the filter attenuates high-frequency components and produces a more continuous output signal.
 </p>	
 
 ---
@@ -269,7 +269,7 @@ $$
 
 
 <p align="justify">
-In this circuit, the gain is equal to 1 because it uses unity-gain Sallen-Key low-pass filter configuration, meaning the output voltage closely follows the input voltage without amplfication or attenuation.
+&emsp;&emsp;In this circuit, the gain is equal to 1 because it uses unity-gain Sallen-Key low-pass filter configuration, meaning the output voltage closely follows the input voltage without amplfication or attenuation.
 </p>
 
 **Low-Pass 3 dB Cutoff Frequency Calculation**
@@ -340,25 +340,24 @@ $$
 </div>
 
 
-_Explain pa kontii Therefore, the theoretical 3 dB cutoff frequency of the low-pass filter is approximately 1 Hz.
-_
+&emsp;&emsp;Therefore, the theoretical 3 dB cutoff frequency of the low-pass filter is approximately 1 Hz, which closely agrees with the target design frequency and confirms that the circuit performs as intended for the EMG-powered robotic arm system.
+
 
 ---
 ## 4. Demonstration Video
 
-The video presentation and demonstration of the project can be accessed through the links provided below. It includes the overview of the system, design process, circuit implementation, software simulation, and the actual operation of the prototype.
+&emsp;&emsp;The video presentation and demonstration of the project can be accessed through the links provided below. It includes the overview of the system, design process, circuit implementation, software simulation, and the actual operation of the prototype.
 
 Google Drive: [Lab 9 Demo Video](https://drive.google.com/file/d/1u4ge_w-MXp7ir26nJ4rECyKowJUQB6NI/view?usp=sharing)
 
 ---
 ## 5. Group Conclusion
 
-Provide a concise 1–2 paragraph summary discussing:
+<p align="justify">
+&emsp;&emsp;This lab exercise successfully implemented the RMS envelope detector with a 1 Hz low-pass filter. The filtered outputs from EMG Channels 1 and 2, with estimated frequency responses of 1.003 Hz and 1.012 Hz, respectively, nearly matched the required 1 Hz cutoff frequency. These findings demonstrate that the RC low-pass filter circuits successfully reduced the rectified EMG signal's high-frequency components while maintaining the slower-varying envelope that reflects the overall degree of muscle activation. The design is further validated by the theoretical 3 dB cutoff frequency of roughly 0.98 Hz, and the slight variations between the two channels are in line with anticipated real-world elements like component tolerances, breadboard contact resistance, and waveform measurement variability.
 
-- Success of the RMS envelope detector implementation
-- Performance of the 1 Hz low-pass filters
-- Importance of signal conditioning in biomedical robotics
-- Relevance to safe and accurate robotic arm control systems
+<p align="justify">
+&emsp;&emsp;The laboratory's findings demonstrate how important signal conditioning is to biomedical robotic systems. Servomotors cannot be directly driven by raw EMG signals without running the risk of unstable or erratic movement due to their inherent noise and quick fluctuations. The 1 Hz low-pass filter ensures that the robotic arm reacts to the user's intended muscle activation rather than to fleeting noise by smoothing these signals into a consistent, slowly fluctuating control input. Since constant and predictable actuator behavior is crucial for any assistive or rehabilitative equipment, this immediately improves the safety and accuracy of the EMG-powered robotic arm. The practical significance of analog signal processing in bridging the gap between physiological inputs and dependable mechanical control is demonstrated by the successful creation and validation of these filter circuits.
 
 ---
 
