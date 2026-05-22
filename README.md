@@ -14,7 +14,7 @@
 | Valencia, Pearl Marie N. | [GitHub](#) |
 
 ---
-## Module Objectives
+## 2. Module Objectives
 
 This laboratory activity aims to:
 
@@ -22,9 +22,9 @@ This laboratory activity aims to:
 - Use the square wave generator built in Lab 1 as a test signal to determine the frequency response of the filters. 
 
 ---
-##  BIOPAC Documentation & Data
+##  3. BIOPAC Documentation & Data
 
-### Circuit Function
+### 3.1. Circuit Function
 
 <p align="justify">
 &emsp;&emsp;The circuit used in this laboratory functions as a 1 Hz low-pass filter for the EMG-powered robotic arm system. Its main role is to process the output from the absolute value circuit by reducing the fast variations present in the rectified EMG signal. Since EMG signals naturally contain rapid changes and high-frequency components, they cannot be directly used as stable control inputs for a robotic arm. The low-pass filter helps convert these changing signals into a smoother waveform that better represents the general level of muscle activity.
@@ -32,7 +32,7 @@ This laboratory activity aims to:
 <p align="justify">
 &emsp;&emsp;In the robotic arm system, this filtered signal becomes more suitable for controlling the servomotors. The 1 Hz low-pass filter behaves similarly to an RMS conversion, where the filtered rectified EMG signal becomes proportional to the average EMG amplitude over approximately one-second intervals. This means that instead of responding to every small fluctuation in the EMG signal, the circuit produces a slower and more usable control signal that reflects the strength of muscle activation.
 
->#### Engineering Purpose
+>#### 3.1.1. Engineering Purpose
 
 <p align="justify">
 &emsp;&emsp;The engineering purpose of the RMS envelope detector, represented by the 1 Hz low-pass filter in this laboratory, is to transform the rectified EMG signal into a smoother and more usable control signal for the robotic arm. Since EMG signals contain rapid fluctuations and high-frequency components, direct use of the raw signal may result in unstable or inconsistent actuator movement. By filtering the signal, the circuit reduces unwanted high-frequency variations and allows the system to respond mainly to the general level of muscle activity. This produces a more stable control input that is better suited for servomotor operation, since the BIOPAC manual notes that the robotic arm’s servomotor control signals must be limited to frequencies no greater than 1 Hz.
@@ -41,7 +41,7 @@ This laboratory activity aims to:
 &emsp;&emsp;The circuit also functions similarly to an RMS envelope detector because it does not follow every small change in the EMG waveform. Instead, it produces an output that reflects the average EMG amplitude over a short time interval. This helps convert raw EMG activity into usable motion control data, allowing the robotic arm to respond more smoothly to muscle activation.
 
 
->#### Biomedical Relevance
+>#### 3.1.2. Biomedical Relevance
 
 <p align="justify">
 &emsp;&emsp;In biomedical instrumentation, signal conditioning is necessary because biological signals such as EMG are often small, noisy, and variable. For an EMG-powered robotic arm, the system must interpret muscle activity accurately before it can produce a safe and reliable mechanical response. The low-pass filter supports this process by reducing noise and smoothing the signal, allowing the device to focus on the meaningful changes in muscle contraction rather than on fast and irregular signal fluctuations.
@@ -51,9 +51,9 @@ This laboratory activity aims to:
 
 
 ---
-###  Schematics & Waveforms
+###  3.2. Schematics & Waveforms
 
->#### Circuit Schematics
+>#### 3.2.1. Circuit Schematics
 
 <div align="center">
 
@@ -91,7 +91,7 @@ This laboratory activity aims to:
 
 ---
 
-> #### BIOPAC Waveform Outputs
+> #### 3.2.2. BIOPAC Waveform Outputs
 
 **EMG Channel 1 Low Pass:**
 
@@ -151,9 +151,9 @@ The figure above shows the EMG Channel 2 waveform during the waveform selection 
 
 ---
 
-### Calculations & Frequency Response Analysis
+### 3.3. Calculations & Frequency Response Analysis
 
->#### Low Pass Filter Measurements
+>#### 3.3.1. Low Pass Filter Measurements
 
 <div align="center">
 
@@ -181,7 +181,7 @@ The figure above shows the EMG Channel 2 waveform during the waveform selection 
 
 ---
 
->#### Calculations for 10% and 90% Values
+>#### 3.3.2. Calculations for 10% and 90% Values
 
 <div align="center">
 
@@ -204,7 +204,7 @@ The figure above shows the EMG Channel 2 waveform during the waveform selection 
 
 ---
 
->#### Low Pass Frequency Response
+>#### 3.3.3. Low Pass Frequency Response
 
 <div align="center">
 	
@@ -237,7 +237,7 @@ Where:
 </p>
 
 
->#### Gain and 3 dB Cutoff Frequency Calculations
+>#### 3.3.4. Gain and 3 dB Cutoff Frequency Calculations
 
 **Gain**
 <div align="center">
@@ -329,9 +329,7 @@ _Explain pa kontii Therefore, the theoretical 3 dB cutoff frequency of the low-p
 _
 
 ---
-## Video Presentation
-
-### Demonstration Video
+## 4. Demonstration Video
 
 Insert your presentation/demo link below.
 
@@ -339,7 +337,7 @@ Insert your presentation/demo link below.
 - 📁 Vimeo: [Insert Link Here](#)
 
 ---
-## Group Conclusion
+## 5. Group Conclusion
 
 Provide a concise 1–2 paragraph summary discussing:
 
@@ -350,23 +348,27 @@ Provide a concise 1–2 paragraph summary discussing:
 
 ---
 
-## References
+## 6. References
 
 BIOPAC Systems, Inc. (2020). *BSL PRO Lesson H40: EMG-Powered Robotic Arm*. BIOPAC Systems, Inc.
 
 ---
-## Repository Structure
+## 7. Repository Structure
 
 ```bash
 LABORATORY-9/
 │
 ├── README.md
-├── schematics/
-├── waveform-data/
-├── fft-analysis/
-├── calculations/
-├── presentation/
-└── documentation/
+├── Waveforms/
+	├── waveform-data/
+	├── fft-analysis/
+	├── calculations/
+	├── presentation/
+└── Circuits and BioPac Files/
+	├── waveform-data/
+	├── fft-analysis/
+	├── calculations/
+	├── presentation/
 ```
 
 ---
