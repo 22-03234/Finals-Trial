@@ -2,7 +2,7 @@
 ## 1 Hz Low-Pass Filter (RMS Envelope Detector)
 
 ---
-## Group Information
+## 1. Group Information
 
 #### Group 2 — Team Members
 
