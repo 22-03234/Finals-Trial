@@ -6,12 +6,12 @@
 
 #### Group 2 — Team Members 
 
-| Name | Role(s) | GitHub Profile |
-|---|---|---|
-| Mangali, Ma. Kristina Cassandra S. | Project Engineer & Bio-Signals Specialist | [GitHub](#) |
-| Nueva, Juliana Kyle L. |  Data Analyst & Video Editor| [GitHub](#) |
-| Pomarejos, Sophia Moira Leigh M. | Data Analyst & Validation | [GitHub](https://github.com/smleighmp) |
-| Valencia, Pearl Marie N. | Project Engineer & Bio-Signals Specialist | [GitHub](#) |
+| Name | Role(s) & GitHub Profile |
+|---|---|
+| Mangali, Ma. Kristina Cassandra S. | [Project Engineer & Bio-Signals Specialist](https://github.com/22-06206) |
+| Nueva, Juliana Kyle L. | [Data Analyst & Video Editor](https://github.com/22-02522) |
+| Pomarejos, Sophia Moira Leigh M. | [Data Analyst & Validation](https://github.com/smleighmp) |
+| Valencia, Pearl Marie N. | [Project Engineer & Bio-Signals Specialist](https://github.com/22-03234) |
 
 ---
 ## 2. Module Objectives
