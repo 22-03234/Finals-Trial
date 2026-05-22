@@ -358,16 +358,19 @@ BIOPAC Systems, Inc. (2020). *BSL PRO Lesson H40: EMG-Powered Robotic Arm*. BIOP
 ```bash
 BioE_4201_Finals/
 |   LABORATORY-9/
-	├── README.md
+	├── README.md/
 	├── Waveforms/
-		├── waveform-data/
-		├── fft-analysis/
-		├── calculations/
-		├── presentation/
+		├── EMG 1.png
+		├── EMG 1_10-90.png
+		├── EMG 2.png
+		├── EMG 2_10-90.png
+		├── Lab9_ActualCircuit.jpeg
+		├── Lab9_U4.png
+		├── Lab9_U7.png
 	└── Circuits and BioPac Files/
-		├── waveform-data/
-		├── fft-analysis/
-		├── calculations/
-		├── presentation/
+		├── EMG_CH-1_Lab 9.acq
+		├── EMG_CH-1_Lab 9.ms14
+		├── EMG_CH-2_Lab 9.acq
+		├── EMG_CH-2_Lab 9.ms14
 ```
 ---
