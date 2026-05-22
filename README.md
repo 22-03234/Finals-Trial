@@ -195,11 +195,25 @@ The figure above shows the EMG Channel 2 waveform during the waveform selection 
 
 **EMG Channel 1**
 
-[Show calculations here]
+10% Value = Min + (0.1 × P-P)
+= -241.851 + (0.1 × 495.62)
+= -241.851 + 49.562
+= -192.289 mV 
+90% Value = Min + (0.9 × P-P)
+= -241.851 + (0.9 × 495.62)
+= -241.851 + 446.058
+= 204.207 mV 
 
 **EMG Channel 2**
 
-[Show calculations here]
+10% Value = Min + (0.1 × P-P)
+= -248.306 + (0.1 × 507.614)
+= -248.306 + 50.7614
+= -197.545 mV 
+90% Value = Min + (0.9 × P-P)
+= -248.306 + (0.9 × 507.614)
+= -248.306 + 456.853
+= 208.547 mV 
 
 
 ---
