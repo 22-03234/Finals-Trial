@@ -331,10 +331,9 @@ _
 ---
 ## 4. Demonstration Video
 
-Insert your presentation/demo link below.
+The video presentation and demonstration of the project can be accessed through the links provided below. It includes the overview of the system, design process, circuit implementation, software simulation, and the actual operation of the prototype.
 
-- 📺 YouTube: [Insert Link Here](#)
-- 📁 Vimeo: [Insert Link Here](#)
+Google Drive: [Lab 9 Demo Video](https://drive.google.com/file/d/1u4ge_w-MXp7ir26nJ4rECyKowJUQB6NI/view?usp=sharing)
 
 ---
 ## 5. Group Conclusion
