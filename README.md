@@ -348,7 +348,7 @@ $$
 
 &emsp;&emsp;The video presentation and demonstration of the project can be accessed through the links provided below. It includes the overview of the system, design process, circuit implementation, software simulation, and the actual operation of the prototype.
 
-Google Drive: [Lab 9 Demo Video](https://drive.google.com/file/d/1u4ge_w-MXp7ir26nJ4rECyKowJUQB6NI/view?usp=sharing)
+Google Drive: [Lab 9 Demo Video](https://drive.google.com/file/d/1325HukyDJBHsyqyqwnfIQtHOueA0Zllz/view?usp=sharing)
 
 ---
 ## 5. Group Conclusion
